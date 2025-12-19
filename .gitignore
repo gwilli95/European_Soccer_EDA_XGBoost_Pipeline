@@ -1,0 +1,14 @@
+#Virtual environment
+**/.venv/
+
+#All folders named __pycache__ nested in any folders
+**/__pycache__/
+
+#Stored data, including output files
+**/data/
+
+#Random
+*.DS_Store
+
+#ipynb checkpoints
+**/.ipynb_checkpoints/
