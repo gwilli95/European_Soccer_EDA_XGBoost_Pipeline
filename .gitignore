@@ -9,6 +9,7 @@
 
 #Random
 *.DS_Store
+*.python-version
 
 #ipynb checkpoints
 **/.ipynb_checkpoints/
