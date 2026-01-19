@@ -10,8 +10,10 @@ dependencies = [
     "matplotlib>=3.10.8",
     "numpy>=2.3.5",
     "pandas>=2.3.3",
-    "pathlib>=1.0.1",
     "scikit-learn>=1.8.0",
+    "sqlalchemy>=2.0.45",
     "supertree>=0.5.5",
     "xgboost>=3.1.2",
 ]
+[tool.uv]
+package = false
