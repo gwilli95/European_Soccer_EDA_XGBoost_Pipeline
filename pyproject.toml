@@ -1,19 +1,17 @@
 [project]
 name = "sports-project"
 version = "0.1.0"
-description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "ipykernel>=7.1.0",
     "ipython-sql>=0.5.0",
-    "joblib>=1.5.3",
     "kagglehub>=0.3.13",
     "matplotlib>=3.10.8",
     "numpy>=2.3.5",
     "pandas>=2.3.3",
     "pathlib>=1.0.1",
     "scikit-learn>=1.8.0",
-    "seaborn>=0.13.2",
+    "supertree>=0.5.5",
     "xgboost>=3.1.2",
 ]

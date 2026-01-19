@@ -7,8 +7,12 @@ from config import DATA_PATH
 
 def ingest_kaggle_database(path):
     #1. Retrieve the download path
-    download_path = kagglehub.dataset_download(path)
-    
+    try:
+        download_path = kagglehub.dataset_download(path)
+    except StopIteration as error:
+        print(error, "Try using kagglehub.dataset_download(path, force_download = True) once to force-download the dataset into current cache. After the first time, leaving force_download activated will cause unnecessary re-downloads each time it is called.")
+        return
+        
     #2. Access the database file name
     downloaded_files = os.listdir(download_path) #Lists downloaded files
     sqlite_file = next(f for f in downloaded_files if f.endswith(".sqlite")) #Gets the first .sqlite file
@@ -19,9 +23,8 @@ def ingest_kaggle_database(path):
     #4. Create data folder for the path to go in
     os.makedirs(DATA_PATH, exist_ok = True)
     
-    #5. Move full file path into the folder
+    #5. Copy full file path into the folder (using .move method instead may cause file conflict error)
     shutil.copy(full_path, DATA_PATH)
-    
     
 def join_player_attributes(all_attributes, core_attributes):
     """
