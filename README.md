@@ -68,6 +68,7 @@ Name: count, dtype: float64
   - Clone repository
     - `git clone https://github.com/gwilli95/European_Soccer_EDA_XGBoost_Pipeline`
     - Important: Set the current directory to be the name of the project folder (European_Soccer_EDA_XGBoost_Pipeline). This will prevent errors by allowing uv to search for the needed dependency files in the right directory.
+      - After cloning project into folder, run terminal command `cd European_Soccer_EDA_XGBoost_Pipeline` (command works across operating systems).
   - Kaggle authentication
     - User authentication for use of the Kagglehub package is more automatic than with the Kaggle package. However, it still requires downloading a `kaggle.json` file with authentication information and moving it into a folder called `.kaggle`, if not done already. Comprehensive instructions for authentication and setup are found in the Kagglehub documentation (see the README from https://github.com/Kaggle/kagglehub).
 - Install uv if needed and sync dependencies
