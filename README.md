@@ -62,9 +62,9 @@ Name: count, dtype: float64
 ## Usage and Setup
   
   - Requirements
-   - Python >= 3.11
-   - uv (dependency management package)
-   - 
+    - Python version >= 3.11
+    - uv (dependency management package)
+    - Kaggle account and initial authentication steps (if not done already)
   - Clone repository
     - `git clone https://github.com/gwilli95/soccer_eda_ml`
   - Kaggle authentication
